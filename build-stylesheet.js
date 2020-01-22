@@ -4,7 +4,7 @@ const { createWriteStream } = require('fs');
 const { resolve } = require('path');
 
 
-const TARGET = resolve('index.scss');
+const TARGET = resolve('dist', 'index.scss');
 
 let colorsMap = new Map(Object.entries(colors));
 

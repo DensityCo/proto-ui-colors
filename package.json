@@ -2,11 +2,16 @@
   "name": "@density/proto-ui-colors",
   "version": "1.0.2",
   "description": "",
-  "main": "index.js",
-  "style": "index.scss",
+  "files": [
+    "dist/**/*"
+  ],
+  "main": "dist/index.js",
+  "style": "dist/index.scss",
   "scripts": {
-    "build": "tsc -p . && node build-stylesheet",
-    "install": "npm run build",
+    "build": "npm run build:js && npm run build:scss && npm run build:source",
+    "build:js": "tsc -p .",
+    "build:scss": "node build-stylesheet",
+    "build:source": "cp ./src/index.ts ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Density",

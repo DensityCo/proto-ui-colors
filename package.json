@@ -1,0 +1,15 @@
+{
+  "name": "@density/proto-ui-colors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p . && node build-stylesheet",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Density",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.7.5"
+  }
+}
